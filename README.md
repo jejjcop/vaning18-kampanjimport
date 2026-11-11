@@ -1,6 +1,5 @@
 ### vaning18-kampanjimport
 A service that imports campaigns from an external REST API into MySQL
-It uses Bootstrap 
 
 ### Start the server
 

@@ -15,6 +15,8 @@
         .btn-secondary:hover { background: #2471a3; }
         .btn-import { background: #d35400; }
         .btn-import:hover { background: #ba4a00; }
+        .btn-search { background: #4e4064; }
+        .btn-search:hover { background: rgba(78, 64, 100, 0.9)}
         .success { color: #27ae60; background: #e8f8f5; padding: 12px; border-radius: 4px; margin-bottom: 15px; font-size: 0.9rem; text-align: left; line-height: 1.5; }
         .error { color: #c0392b; background: #fadbd8; padding: 10px; border-radius: 4px; margin-bottom: 15px; }
 
@@ -66,6 +68,8 @@
                 <a href="index.php?action=list" class="btn btn-secondary">View all campaigns</a>
                 
                 <a href="index.php?action=history" class="btn">View import history</a>
+
+                <a href="index.php?action=search" class="btn btn-search">Search Campaigns</a>
 
                 <a href="index.php?action=logout" style="color: #c0392b; text-decoration: none; font-size: 0.9rem; display: inline-block; margin-top: 15px;">Logout (<?= htmlspecialchars($_SESSION['username']) ?>)</a>
             </div>

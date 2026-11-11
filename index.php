@@ -54,6 +54,10 @@ switch($action)
         $importController->viewImportHistory();
         break;
 
+    case 'search':
+        $campaignController->search();
+        break;
+
     default:
         $campaignController->index();
         break;

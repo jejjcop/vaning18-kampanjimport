@@ -76,4 +76,18 @@ class CampaignController {
             require_once __DIR__ . '/../views/home_view.php';
         }
     }
+
+    // Search campaigns
+    public function search(): void 
+    {
+        $campaigns = array();
+        $q = "";
+        if (isset($_GET['q']))
+        {
+            $q = htmlspecialchars($_GET['q']);
+            $campaigns = $this->campaignModel->search($q);
+        }
+        require_once __DIR__ . '/../views/search_campaigns_view.php';
+    }
+
 }

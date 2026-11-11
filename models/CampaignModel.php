@@ -117,6 +117,13 @@ class CampaignModel {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function search(string $q): array 
+    {
+        $stmt = $this->pdo->prepare("SELECT * FROM campaigns WHERE user_id = :user_id AND TITLE LIKE :q ORDER BY id DESC");
+        $stmt->execute(['q' => '%'.$q.'%', 'user_id' => $_SESSION['user_id']]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function getCampaignCount(): int 
     {
         $stmt = $this->pdo->prepare("SELECT COUNT(*) FROM campaigns WHERE user_id = :user_id");
