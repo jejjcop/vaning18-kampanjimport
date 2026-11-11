@@ -1,1 +1,0 @@
-{"version":2,"defects":[],"times":{"CampaignModelTest::testImportCampaignsSavesDataCorrectly":0.001,"CampaignModelTest::testRepeatedImportDoesNotCreateDuplicates":0,"CampaignModelTest::testUserIsolation":0,"CampaignModelTest::testTransactionRollbackOnError":0.001}}
